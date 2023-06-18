@@ -7,15 +7,15 @@ int main(void)
 {
 	int w;
 
-	for (w = 48; w < 58; w++)
+	for (w = 0; w <= 9; w++)
 	{
 		putchar(w);
-		if (w != 57)
+		if (w != 9)
 		{
-			putchar(',');
+			putchar(w);
 			putchar(' ');
 		}
 	}
-	putchar(',');
+	putchar('\n');
 	return (0);
 }
