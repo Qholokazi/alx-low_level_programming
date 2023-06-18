@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Description: 'Print number of base 10 using putchar'
+ * Return: Always 0
  */
 int main(void)
 {
-        int i;
-        for (i=48;i<58;i++)
-        {
-                putchar(i);
-        }
-        putchar('\n');
-        return (0);
+	int n;
+
+	for(n = 0; n <= 9; n++)
+	{
+		putchar(n + 48);
+	}
+	putchar('\n');
+	return (0);
 }
