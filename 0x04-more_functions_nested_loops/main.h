@@ -13,5 +13,6 @@ void print_number(int n);
 int mul(int a, int b);
 void print_square(int size);
 int _putchar(char c);
+void more_numbers(void);
 
 #endif
