@@ -4,27 +4,22 @@
  * _strcat - Entry point
  * @dest: input value
  * @src: input value
- *
- * Return: void
+ * Return: Apointer to the resulting string dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int a;
-	int b;
+	int dlen = 0, i;
 
-	a = 0;
-	while (dest[a] != '\0')
+	while (dest[dlen])
 	{
-		a++;
+		dlen++;
 	}
-	b = 0;
-	while (src[b] != '\0')
+	for (i = 0; src[i] != 0; i++)
 	{
-		dest[a] = src[b];
-		a++;
-		b++;
+		dest[dlen] = src[i];
+		dlen++;
 	}
-	dest[a] = '\0';
+	dest[dlen] = '\0';
 	return (dest);
 }
